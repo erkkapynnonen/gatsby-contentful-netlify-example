@@ -1,0 +1,1223 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2017-12-27T14:56:33.873Z",
+        "updatedAt": "2017-12-27T14:56:34.395Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2017-12-27T14:56:34.395Z",
+        "publishedAt": "2017-12-27T14:56:34.395Z"
+      },
+      "displayField": "title",
+      "name": "Page",
+      "description": "I'll have my pages here, thank you very much.",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2017-12-27T15:01:02.495Z",
+        "updatedAt": "2017-12-27T15:01:02.825Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2017-12-27T15:01:02.825Z",
+        "publishedAt": "2017-12-27T15:01:02.825Z"
+      },
+      "displayField": "title",
+      "name": "Blog Post",
+      "description": "My awesome and interesting Posts",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "gallery",
+        "type": "ContentType",
+        "createdAt": "2017-12-27T15:13:08.383Z",
+        "updatedAt": "2017-12-27T15:13:08.762Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2017-12-27T15:13:08.762Z",
+        "publishedAt": "2017-12-27T15:13:08.762Z"
+      },
+      "displayField": "title",
+      "name": "Gallery",
+      "description": "Our epic image galleries will use this model.",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "Images",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkMimetypeGroup": [
+                  "image"
+                ]
+              }
+            ],
+            "linkType": "Asset"
+          }
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "nvcam279hmdz",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2017-12-27T14:56:34.512Z",
+        "createdBy": {
+          "sys": {
+            "id": "4IIeIOdjJSCw8771YHRKGG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2017-12-27T14:56:35.330Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4IIeIOdjJSCw8771YHRKGG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "markdown"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "nvcam279hmdz",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2017-12-27T15:01:02.944Z",
+        "createdBy": {
+          "sys": {
+            "id": "4IIeIOdjJSCw8771YHRKGG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2017-12-27T15:01:03.590Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4IIeIOdjJSCw8771YHRKGG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "markdown"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "nvcam279hmdz",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2017-12-27T15:13:08.869Z",
+        "createdBy": {
+          "sys": {
+            "id": "4IIeIOdjJSCw8771YHRKGG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2017-12-27T15:13:09.670Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4IIeIOdjJSCw8771YHRKGG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "gallery",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetGalleryEditor"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "1AIO8tVAFKGQmIuaSI68W0",
+        "type": "Entry",
+        "createdAt": "2017-12-27T15:22:29.880Z",
+        "updatedAt": "2017-12-27T15:28:22.575Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 8,
+        "firstPublishedAt": "2017-12-27T15:28:22.575Z",
+        "publishedAt": "2017-12-27T15:28:22.575Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "About Us"
+        },
+        "content": {
+          "en-US": "Lorem ipsum dolor amet ugh stumptown pop-up photo booth crucifix tousled humblebrag artisan chia. Woke ethical microdosing, distillery authentic pok pok air plant williamsburg pour-over man bun mixtape. Af blog mixtape mlkshk, asymmetrical blue bottle coloring book biodiesel umami +1 ugh meh PBR&B marfa. Messenger bag literally affogato pitchfork umami heirloom chillwave selfies fingerstache retro adaptogen vape hammock mixtape. 90's locavore beard taxidermy deep v enamel pin ugh chillwave normcore tumeric authentic bitters austin hexagon. Chia seitan pabst waistcoat etsy thundercats.\n\nHexagon lyft quinoa, VHS farm-to-table blue bottle ethical portland bicycle rights microdosing. Meditation DIY VHS, swag celiac four dollar toast art party ramps jean shorts la croix offal. Hot chicken thundercats 90's williamsburg sriracha craft beer. Skateboard small batch authentic ethical, pork belly marfa cronut meditation scenester put a bird on it polaroid readymade slow-carb lumbersexual."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "3ICLBlYWw840gO4gUG02Om",
+        "type": "Entry",
+        "createdAt": "2017-12-28T07:04:56.328Z",
+        "updatedAt": "2017-12-28T07:05:38.783Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 71,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 70,
+        "firstPublishedAt": "2017-12-28T07:05:38.783Z",
+        "publishedAt": "2017-12-28T07:05:38.783Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "My Favourite Craft Beer"
+        },
+        "content": {
+          "en-US": "Actually I really don't even like beer that much, but IPA's are pretty ok. Lorem ipsum sit dolores amet."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "38fdINbVhegwGicWwIQGgo",
+        "type": "Entry",
+        "createdAt": "2017-12-28T07:05:49.470Z",
+        "updatedAt": "2017-12-28T07:06:26.660Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 37,
+        "firstPublishedAt": "2017-12-28T07:06:26.660Z",
+        "publishedAt": "2017-12-28T07:06:26.660Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Coffee is Life"
+        },
+        "content": {
+          "en-US": "Hail coffee, saviour of mornings, blood in our veins."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "3bRZs2wJdYOGCY8KyiGsOa",
+        "type": "Entry",
+        "createdAt": "2017-12-28T07:06:33.754Z",
+        "updatedAt": "2017-12-28T07:06:50.747Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 19,
+        "firstPublishedAt": "2017-12-28T07:06:50.747Z",
+        "publishedAt": "2017-12-28T07:06:50.747Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Post Title 1"
+        },
+        "content": {
+          "en-US": "Hello post 1"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "5DZ3h4lE1qGeKiUgIWkA2E",
+        "type": "Entry",
+        "createdAt": "2017-12-28T07:06:58.213Z",
+        "updatedAt": "2017-12-28T07:07:33.239Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 19,
+        "firstPublishedAt": "2017-12-28T07:07:09.465Z",
+        "publishedAt": "2017-12-28T07:07:33.239Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Post Title 2"
+        },
+        "content": {
+          "en-US": "Hello post 2"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "1mmu1yYGcUeigSQiIi86ou",
+        "type": "Entry",
+        "createdAt": "2017-12-28T07:07:15.829Z",
+        "updatedAt": "2017-12-28T07:07:23.950Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 14,
+        "firstPublishedAt": "2017-12-28T07:07:23.950Z",
+        "publishedAt": "2017-12-28T07:07:23.950Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Post Title 3"
+        },
+        "content": {
+          "en-US": "Hello post 3"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "eFy6kd8wr6EKQEGcwAu0m",
+        "type": "Entry",
+        "createdAt": "2017-12-28T14:05:34.057Z",
+        "updatedAt": "2017-12-28T14:09:25.933Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 13,
+        "firstPublishedAt": "2017-12-28T14:09:25.933Z",
+        "publishedAt": "2017-12-28T14:09:25.933Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "gallery"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "My Awesome Gallery"
+        },
+        "images": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "56FTShf5UAYm2UQAqCiAs2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5J66FJiA92QGQiqaSSkQ6W"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4pfwAtZxfi2k84AEi0ceCI"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5rddhbqWEoy0ycwKGwkOCO"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "4pfwAtZxfi2k84AEi0ceCI",
+        "type": "Asset",
+        "createdAt": "2017-12-28T14:03:46.490Z",
+        "updatedAt": "2017-12-28T14:04:57.520Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2017-12-28T14:04:57.520Z",
+        "publishedAt": "2017-12-28T14:04:57.520Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Tutorial Image 1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/nvcam279hmdz/4pfwAtZxfi2k84AEi0ceCI/2ff72d75fa200875ea4fa5a25431db10/Tutorial_Image_1.jpg",
+            "details": {
+              "size": 20018,
+              "image": {
+                "width": 1400,
+                "height": 900
+              }
+            },
+            "fileName": "Tutorial Image 1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "5J66FJiA92QGQiqaSSkQ6W",
+        "type": "Asset",
+        "createdAt": "2017-12-28T14:03:46.540Z",
+        "updatedAt": "2017-12-28T14:04:56.871Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2017-12-28T14:04:56.871Z",
+        "publishedAt": "2017-12-28T14:04:56.871Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Tutorial Image 2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/nvcam279hmdz/5J66FJiA92QGQiqaSSkQ6W/e0e3cffdf150624fe20ced588665448f/Tutorial_Image_2.jpg",
+            "details": {
+              "size": 47968,
+              "image": {
+                "width": 1440,
+                "height": 900
+              }
+            },
+            "fileName": "Tutorial Image 2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "5rddhbqWEoy0ycwKGwkOCO",
+        "type": "Asset",
+        "createdAt": "2017-12-28T14:03:46.570Z",
+        "updatedAt": "2017-12-28T14:04:56.846Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2017-12-28T14:04:56.846Z",
+        "publishedAt": "2017-12-28T14:04:56.846Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Tutorial Image 3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/nvcam279hmdz/5rddhbqWEoy0ycwKGwkOCO/3366d98df322c51915c4b89b5a426291/Tutorial_Image_3.jpg",
+            "details": {
+              "size": 317145,
+              "image": {
+                "width": 1440,
+                "height": 900
+              }
+            },
+            "fileName": "Tutorial Image 3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "id": "56FTShf5UAYm2UQAqCiAs2",
+        "type": "Asset",
+        "createdAt": "2017-12-28T14:03:46.589Z",
+        "updatedAt": "2017-12-28T14:04:57.516Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2017-12-28T14:04:57.516Z",
+        "publishedAt": "2017-12-28T14:04:57.516Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Tutorial Image 4"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/nvcam279hmdz/56FTShf5UAYm2UQAqCiAs2/55ab0d11a8693bdd5b015c87944a0b23/Tutorial_Image_4.jpg",
+            "details": {
+              "size": 163160,
+              "image": {
+                "width": 1440,
+                "height": 900
+              }
+            },
+            "fileName": "Tutorial Image 4.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "US English",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "439ho50ihhd4QmSPmHaUpg",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "createdAt": "2017-12-27T14:31:16Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedAt": "2017-12-27T14:31:16Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Developer",
+      "description": "Allows reading Entries and managing API Keys",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": "all"
+      },
+      "sys": {
+        "type": "Role",
+        "id": "43a1Gb6j10gOPDca2PcMvc",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "createdAt": "2017-12-27T14:31:16Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedAt": "2017-12-27T14:31:16Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "43b6aCxhJVGWJYF0ohemke",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "nvcam279hmdz"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "createdAt": "2017-12-27T14:31:16Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4IIeIOdjJSCw8771YHRKGG"
+          }
+        },
+        "updatedAt": "2017-12-27T14:31:16Z"
+      }
+    }
+  ]
+}

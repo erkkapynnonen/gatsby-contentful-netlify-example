@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Gallery from '../utils/gallery'
+import Gallery from '../templates/gallery'
 
 const IndexPage = () => (
   <div>

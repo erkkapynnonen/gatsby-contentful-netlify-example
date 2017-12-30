@@ -9,7 +9,6 @@ const propTypes = {
 class SubPage extends React.Component {
   render() {
     const page = this.props.data.contentfulPage
-    console.log(page)
     return (
       <div>
         <h1>{page.title}</h1>

@@ -1,9 +1,18 @@
 import React from 'react'
 
-const Gallery = () => (
+const Gallery = (data) => (
   <div>
+    <h3>{data.content.title}</h3>
     <ul>
-      <li><img src="//picsum.photos/300/200/?random" alt="alt text" /></li>
+      {data.content.images.map((image, i) => (
+        <img
+          key={i}
+          alt={image.title}
+          srcSet={image.sizes.srcSet}
+          src={image.sizes.src}
+          sizes={image.sizes.sizes}
+        />
+      ))}
     </ul>
   </div>
 )

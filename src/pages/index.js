@@ -2,23 +2,65 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Gallery from '../templates/gallery'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
+import slugify from 'slugify'
+const slugifyOptions = {
+  replacement: '-',
+  remove: /[$*_+~.()'"!\-:@]/g,
+  lower: true
+}
 
-    <h2>Here's my gallery:</h2>
-    <Gallery />
-    
-    <h2>Here are my subpages:</h2>
+const LinkList = (data) => {
+  return (
     <ul>
-      <li><Link to="/subpage/">A subpage</Link></li>
+      {data.items.map((item, i) => (
+        <li key={i}>
+          <Link key={i} to={`/${data.basepath}/${slugify(item.node.title, slugifyOptions)}`}>
+            {item.node.title}
+          </Link>
+        </li>
+      ))}
     </ul>
+  )
+}
+
+class IndexPage extends React.Component {
+  render () {
+    return (
+      <div>
+        <h1>Hi people</h1>
     
-    <h2>Here are my posts:</h2>
-    <ul>
-      <li><Link to="/blogpost/">A post</Link></li>
-    </ul>
-  </div>
-)
+        <h2>Here's my gallery:</h2>
+        <Gallery />
+        
+        <h2>Here are my subpages:</h2>
+        <LinkList basepath="pages" items={this.props.data.pages.edges} />
+        
+        <h2>Here are my posts:</h2>
+        <LinkList basepath="posts" items={this.props.data.posts.edges} />
+      </div>
+    )    
+  }
+}
 
 export default IndexPage
+
+export const indexQuery = graphql`
+query indexQuery {
+  pages: allContentfulPage {
+    edges {
+      node {
+        id
+        title
+      }
+    }
+  }
+  posts: allContentfulBlogPost {
+    edges {
+      node {
+        id
+        title
+      }
+    }
+  }
+}
+`

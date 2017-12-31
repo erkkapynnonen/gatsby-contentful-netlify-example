@@ -52,6 +52,40 @@
           })
           resolve()
         })
+        .then(() => {
+            graphql(
+                `
+                  {
+                    allContentfulBlogPost(limit: 1000) {
+                      edges {
+                        node {
+                          id
+                          title
+                        }
+                      }
+                    }
+                  }
+                `
+            )
+            .then(result => {
+                if (result.errors) {
+                reject(result.errors)
+                }
+        
+                // Create Blog Posts
+                const postTemplate = path.resolve(`./src/templates/blogpost.js`)
+                _.each(result.data.allContentfulBlogPost.edges, edge => {
+                createPage({
+                    path: `/posts/${slugify(edge.node.title, slugifyOptions)}/`,
+                    component: slash(postTemplate),
+                    context: {
+                    id: edge.node.id
+                    },
+                })
+                })
+                resolve()
+            })
+        })
     })
   }
   
